@@ -3,10 +3,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
-    
 }
- 
+
 body {
     background-color: #1b1b1b;
     color: #ffffff;
@@ -16,8 +14,9 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
+/* Navbar Styling */
 .nav-bar {
-    height: 60px;
+    height: 70px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -27,6 +26,7 @@ body {
     z-index: 200;
     box-shadow: 0px 5px 15px #000000;
 }
+
 .nav-contents {
     max-width: 1200px;
     margin: 0 auto;
@@ -35,6 +35,8 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
+    
+    
 }
 
 .logo img {
@@ -47,60 +49,122 @@ body {
     text-decoration: none;
     margin: 0 15px;
     font-size: 16px;
+    font-weight: bolder;
     transition: color 0.3s;
 }
 
 .nav-btn a:hover {
-    color: #ffcc00;
+    color: #ff7b00;
     text-shadow: 0px 0px 20px #ff7b00;
+    
 }
 
+/* Hero Section */
 .hero {
-    height: 100vh;
+    height: 100vh; /* Full viewport height */
+    width: 100%;
     background: url(/portfolio-assets/BG-1.png) no-repeat center center/cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    padding: 0 15%;
+    align-items: left;
+    padding: 15%;
     color: #ffffff;
 }
 
+.home-content{
+    align-items: flex-start;
+}
 .head_1 {
-    font-family: Consolas,monaco,monospace;
+    font-family: Consolas, monaco, monospace;
     font-size: 22px;
-    font-weight: 700px;
-    
-   
+    font-weight: 700;
 }
 
 .head_2 {
-    font-family: Consolas,monaco,monospace;
+    font-family: Consolas, monaco, monospace;
     font-size: 55px;
     font-weight: 700;
     color: transparent;
     letter-spacing: -6.9px;
-    -webkit-text-stroke: 3.2px #FF8A2F;
+    -webkit-text-stroke: 3.2px #ff7b00;
     text-shadow: 0px 0px 50px #000000;
 }
 
 .hero p {
     max-width: 600px;
     margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-size: 17px;
 }
 
+.home-btn{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 80%;
+}
+
+.home-btn a {
+    border-color: #000000;
+    
+}
+.project-btn{
+    height: 6vh;
+    width: 15vh;
+    align-content: center;
+    justify-content: center;
+    
+    border-radius: 100vh;
+    background-color: #ffffff;
+   
+}
+
+/* About Section */
+
 .about{
+    align-items: flex-start;
+    padding-left: 15%;
+    padding-right: 15%;
+
+}
+.about-div {
     height: 675px;
     width: 100%;
     display: flex;
     align-items: center;
-}
-.pfp-img img{
-    width: 150px; 
+    justify-content: space-between;
+    
+} 
+
+.pfp-img img {
+    width: 380px; 
     height: auto;
-    border-radius: 14px; 
+    border-radius: 14px;
+}
+.pfp-img{
+    padding-right: 5% ;
 }
 
+/* Bio Section */
+.bio {
+    width: 80%;
+   
+}
 
+.bio h4 {
+    color: #858585;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.bio h1 {
+    color: #ff7b00;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Additional Paragraph Styling in Bio */
+.bio p {
+    line-height: 1.6;
+    color: #ffffff;
+}
